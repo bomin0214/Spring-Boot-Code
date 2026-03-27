@@ -1,0 +1,28 @@
+name: 🚨 Hotfix
+description: 긴급 버그 수정
+title: "[HOTFIX] "
+labels: ["hotfix"]
+
+body:
+  - type: textarea
+    attributes:
+      label: 긴급 이슈 설명
+      placeholder: 어떤 치명적인 문제가 발생했는지
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 영향 범위
+      placeholder: 서비스에 미치는 영향
+
+  - type: dropdown
+    attributes:
+      label: 대상 브랜치
+      options:
+        - main
+
+  - type: textarea
+    attributes:
+      label: 해결 방법
+      placeholder: 어떻게 해결할 예정인지

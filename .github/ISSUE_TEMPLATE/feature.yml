@@ -1,0 +1,37 @@
+name: ✨ Feature
+description: 새로운 기능 개발
+title: "[FEAT] "
+labels: ["feature"]
+
+body:
+  - type: input
+    attributes:
+      label: 기능 이름
+      placeholder: ex) 로그인 기능
+
+  - type: textarea
+    attributes:
+      label: 기능 설명
+      placeholder: 어떤 기능인지 상세히 작성
+    validations:
+      required: true
+
+  - type: checkboxes
+    attributes:
+      label: 작업 내용
+      options:
+        - label: API 개발
+        - label: DB 설계
+        - label: UI 작업
+        - label: 테스트
+
+  - type: dropdown
+    attributes:
+      label: 대상 브랜치
+      options:
+        - develop
+
+  - type: textarea
+    attributes:
+      label: 참고 자료
+      placeholder: 관련 링크, 이미지 등

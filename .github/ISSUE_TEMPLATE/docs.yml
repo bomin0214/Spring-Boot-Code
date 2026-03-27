@@ -1,0 +1,23 @@
+name: 📄 Docs
+description: 문서 수정
+title: "[DOCS] "
+labels: ["documentation"]
+
+body:
+  - type: textarea
+    attributes:
+      label: 수정 내용
+      placeholder: 어떤 문서를 수정하는지
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 변경 이유
+      placeholder: 왜 수정이 필요한지
+
+  - type: dropdown
+    attributes:
+      label: 대상 브랜치
+      options:
+        - develop
